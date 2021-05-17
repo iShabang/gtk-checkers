@@ -22,6 +22,6 @@ On a player's turn, the board will highlight the possible movesets for their pie
 
 Sometimes a multi-part move is required when a player's piece must jump over more than one of the opponent's pieces. The board will indicate this by highlighting the same piece again, forcing the player to confirm the next jump until all jumps are satisified. 
 
-When a player's piece reaches the end of the opponent's side of the board, a crown image will be displayed in the center of the piece indicating that piece has become a king. The piece may move both forward and backward as described in the standard Checkers ruleset.
+When a player's piece reaches the end of the opponent's side of the board, a crown image will be displayed in the center of the piece indicating that piece has become a king. The piece may move both forward and backward.
 
 The game follows the standard checkers ruleset. A player wins the game when all of the opponent's pieces have been wiped from the board. 
