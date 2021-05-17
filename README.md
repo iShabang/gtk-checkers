@@ -3,11 +3,17 @@ Checkers implemented as a C++ GUI application with GTK
 
 ## Build Instructions
 Create and navigate to a build folder in the top directory of the repository.
+
 `$ mkdir PATH-TO-REPO/build && cd PATH-TO-REPO/build`
+
 Run the release build script (or debug script if developing)
+
 `$ ../build-release`
+
 Launch the binary and have fun!
+
 `$ ./checkers`
+
 
 ## How to Play
 
