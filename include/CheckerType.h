@@ -1,0 +1,10 @@
+#ifndef _CHECKERS_CHECKER_TYPE_H_
+#define _CHECKERS_CHECKER_TYPE_H_
+
+enum CheckerType {
+    CHECKER_TYPE_NONE,
+    NORMAL,
+    KING
+};
+
+#endif //_CHECKERS_CHECKER_TYPE_H_
