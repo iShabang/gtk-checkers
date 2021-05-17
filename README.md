@@ -16,8 +16,9 @@ Launch the binary and have fun!
 
 
 ## How to Play
+2 Players
 
-On your turn, the board will highlight the possible movesets for your pieces. Click one of the highlighted squares to see the possible destinations for the selected piece. If you are satisfied with the move, click one of the highlighted destinations to complete the turn. Note: if you don't want to commit the selected move, just click the source square again to go back to the previous state. 
+On a player's turn, the board will highlight the possible movesets for their pieces. The player must click one of the highlighted squares to see the possible destinations for the selected piece. If the player is satisfied with the move, they must click one of the highlighted destinations to complete the turn. Note: if the player does not want to commit the selected move, they can click the source square again to go back to the previous state. 
 
 Sometimes a multi-part move is required when a player's piece must jump over more than one of the opponent's pieces. The board will indicate this by highlighting the same piece again, forcing the player to confirm the next jump until all jumps are satisified. 
 
