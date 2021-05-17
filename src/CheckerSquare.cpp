@@ -15,6 +15,10 @@ Square::Square(Position pos, ColorMapper &cm) : m_pos(pos), m_cm(cm), m_movable(
     set_events(events);
     //drag_source_set(targets);
     //drag_dest_set(targets);
+
+    if (m_getCrown) {
+        m_crown = setupCrown();
+    }
 }
 
 bool Square::on_draw(const Cairo::RefPtr<Cairo::Context> &cr) {
@@ -94,8 +98,7 @@ void Square::drawPiece(const Cairo::RefPtr<Cairo::Context> &cr, Gdk::RGBA color,
 
 void Square::drawKing(const Cairo::RefPtr<Cairo::Context> &cr, int x, int y, int width, int height) {
     if (m_crown.get() == nullptr) {
-        std::cout << "No king image found!" << std::endl;
-        m_crown = setupCrown();
+        return;
     }
     if (m_crown->get_width() != width) {
         m_crown = m_crown->scale_simple(width, height, Gdk::INTERP_BILINEAR);
@@ -206,6 +209,8 @@ bool Square::prepped() {
 
 Glib::RefPtr<Gdk::Pixbuf> Square::m_crown = Glib::RefPtr<Gdk::Pixbuf>(nullptr);
 
+bool Square::m_getCrown = true;
+
 Glib::RefPtr<Gdk::Pixbuf> Square::setupCrown() {
     try {
         auto pb = Gdk::Pixbuf::create_from_file("../crown.png");
@@ -215,6 +220,7 @@ Glib::RefPtr<Gdk::Pixbuf> Square::setupCrown() {
     } catch (Gdk::PixbufError &e) {
         std::cerr << "Failed to open crown file: " << e.what();
     }
+    m_getCrown = false;
     return Glib::RefPtr<Gdk::Pixbuf>(nullptr);
 }
 

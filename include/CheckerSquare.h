@@ -60,6 +60,7 @@ private:
     bool m_valid;
     bool m_pressed;
     static Glib::RefPtr<Gdk::Pixbuf> m_crown;
+    static bool m_getCrown;
 };
 
 #endif //_CHECKERS_CHECKER_SQUARE_H_
